@@ -1,0 +1,28 @@
+.profile__redact {
+    all: unset;
+    background-size: 7.5;
+    background-image: url(../../../images/rectangle.svg);
+    width: 17px;
+    height: 17px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    align-self: center;
+    margin-left: 10px;
+}
+
+.profile__button-redact:hover {
+    opacity: 60%;
+}
+
+@media screen and (min-width: 768px) {
+
+    .profile__redact {
+        background-size: 10px;
+        width: 24px;
+        height: 24px;
+        margin-left: 25px;
+
+    }
+}
