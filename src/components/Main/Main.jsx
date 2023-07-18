@@ -17,13 +17,9 @@ export default function Main({ onEditProfile, onAddPlace, onEditAvatar, onCardCl
                 setUserAvatar(resDataUser.avatar)
                 resDataCard.forEach(data => data.myId = resDataUser._id)
                 setCards(resDataCard)
-            },)
-        // .then(([resDataUser, resDataCard]) => {
-        //     resDataCard.forEach(element => element.myId = resDataUser._id)
-        //     userInfo.setUserInfo({ name: resDataUser.name, job: resDataUser.about, avatar: resDataUser.avatar })
-        //     section.renderItems(resDataCard)
-        // })
-        // .catch((error) => console.error(`Ошибка при создании данных ${error}`))
+            },
+        )
+        .catch((error) => console.error(`Ошибка при создании данных ${error}`))
 
     }, [])
     return (
